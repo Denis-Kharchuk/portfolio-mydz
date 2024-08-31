@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio-mydz/static/css/main.e6c13ad2.css",
+    "main.js": "/portfolio-mydz/static/js/main.ffd4b13f.js",
+    "static/js/787.25eaef86.chunk.js": "/portfolio-mydz/static/js/787.25eaef86.chunk.js",
+    "static/media/main-svg-sprite.svg": "/portfolio-mydz/static/media/main-svg-sprite.ff9eafa5ce40eae25c6903db9df4ddac.svg",
+    "static/media/photo.png": "/portfolio-mydz/static/media/photo.120508703189ce819aa1.png",
+    "static/media/styledComponents.svg": "/portfolio-mydz/static/media/styledComponents.191a069dabd433c1f313bb6697a77cba.svg",
+    "static/media/postgresql.svg": "/portfolio-mydz/static/media/postgresql.69915fd0946d36f52659f5509cd255ee.svg",
+    "static/media/express.svg": "/portfolio-mydz/static/media/express.6e896e1f9017ecb4555c9bde17c1d0b2.svg",
+    "static/media/reactJs.svg": "/portfolio-mydz/static/media/reactJs.d7b9afeaf30f84bb550535130fa5fbf6.svg",
+    "static/media/jest.svg": "/portfolio-mydz/static/media/jest.cccfea0f2ab82032da240d6406153ebf.svg",
+    "static/media/reactNactive.svg": "/portfolio-mydz/static/media/reactNactive.6a9448467d75535c5ba2bfc007da1973.svg",
+    "static/media/nest.svg": "/portfolio-mydz/static/media/nest.ea59157760601ca82e7264026e6e82cd.svg",
+    "static/media/redux.svg": "/portfolio-mydz/static/media/redux.7ef4cc3fd896a37e8e59d938b0e7487d.svg",
+    "static/media/typescript.svg": "/portfolio-mydz/static/media/typescript.ca678e7cfa865a51a93407f3d6b1a6b0.svg",
+    "static/media/git.svg": "/portfolio-mydz/static/media/git.8d3f35280a131a86d76885b47efe0018.svg",
+    "static/media/docker.svg": "/portfolio-mydz/static/media/docker.6f5d0e2c0497ba94233dd310b7ae3dda.svg",
+    "static/media/Javascript.svg": "/portfolio-mydz/static/media/Javascript.d13b91d1218f2c58da91852ba3e130e5.svg",
+    "static/media/mongodb.svg": "/portfolio-mydz/static/media/mongodb.3dc861832f1decd0e3ee95911847478f.svg",
+    "index.html": "/portfolio-mydz/index.html",
+    "main.e6c13ad2.css.map": "/portfolio-mydz/static/css/main.e6c13ad2.css.map",
+    "main.ffd4b13f.js.map": "/portfolio-mydz/static/js/main.ffd4b13f.js.map",
+    "787.25eaef86.chunk.js.map": "/portfolio-mydz/static/js/787.25eaef86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ffd4b13f.js"
+  ]
+}
