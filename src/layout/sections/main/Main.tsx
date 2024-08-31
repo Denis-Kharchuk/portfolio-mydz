@@ -1,8 +1,6 @@
-import React from "react";
-import { Logo } from "../../../components/logo/Logo";
 import { Icon } from "../../../components/icon/Icon";
 import styled from "styled-components";
-import photo from "../../../assets/img/imagex.png";
+
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";
 import { StyledButton } from "../../../components/Button";
@@ -11,7 +9,7 @@ export const Main = () => {
   return (
     <StyledMain>
       <Container>
-        <FlexWrapper align={"center"} justify={"space-between"}>
+        <FlexWrapper align={"center"} justify={"space-evenly"} wrap="wrap">
           <StyledMainSection>
             <MainTitle>WEB DEVELOPER</MainTitle>
             <h2>Denis Fereg</h2>
@@ -75,7 +73,7 @@ const StyledMain = styled.section`
 `;
 
 const StyledMainSection = styled.div`
-  width: 514px;
+  max-width: 514px;
   height: 278px;
 `;
 

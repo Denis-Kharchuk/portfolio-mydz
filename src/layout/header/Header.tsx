@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { Logo } from "../../components/logo/Logo";
 import { Menu } from "../../components/menu/Menu";
@@ -12,6 +11,7 @@ export const Header = () => {
       <Container>
         <FlexWrapper justify="space-between" align="center">
           <Logo />
+
           <Menu />
         </FlexWrapper>
       </Container>
@@ -21,6 +21,8 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
   background-color: #123e5c;
+  max-width: 1200;
+  width: 100%;
   padding: 20px 0;
   position: fixed;
   top: 0;

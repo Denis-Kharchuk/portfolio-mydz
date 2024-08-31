@@ -16,6 +16,7 @@ export const Project2 = (props: ProjectPropsType) => {
     <ProjectStyles>
       <Image src={props.src} />
       <TitleProject>{props.title}</TitleProject>
+
       <StyledButton>Javascript</StyledButton>
       <StyledButton>React Native</StyledButton>
       <StyledButton>redux</StyledButton>
@@ -26,7 +27,8 @@ export const Project2 = (props: ProjectPropsType) => {
 
 const ProjectStyles = styled.div`
   border-radius: 6px;
-  width: 522px;
+  max-width: 522px;
+  width: 100%;
   height: 636px;
   background: #222525;
 
@@ -63,6 +65,7 @@ const TextProject = styled.p`
 `;
 
 const Image = styled.img`
-  width: 522px;
+  max-width: 522px;
+  width: 100%;
   height: 388px;
 `;

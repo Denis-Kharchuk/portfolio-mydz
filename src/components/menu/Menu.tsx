@@ -26,14 +26,39 @@ export const Menu = () => {
 const StyledMenu = styled.nav`
   ul {
     display: flex;
-    justify-content: space-between;
+
+    gap: 87px;
     align-items: center;
-    gap: 30px;
+  }
+
+  li:last-child {
+    border-radius: 6px;
+    padding: 12px 20px 13px 20px;
+
+    width: 105px;
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
   }
 
   .right {
     display: flex;
-    gap: 30px;
+
+    align-items: center;
+    gap: 87px;
+  }
+
+  li:last-child a {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #252728;
+
+    &:hover {
+      transform: translateY(20px);
+      box-shadow: 0px 30px 40px rgba(166, 207, 231, 0.966);
+    }
   }
 
   a {

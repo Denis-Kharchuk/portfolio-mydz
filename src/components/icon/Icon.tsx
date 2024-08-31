@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import iconsSprite from "../../assets/img/main-svg-sprite.svg";
+import { thema } from "../../styles/Thema";
 
 type IconPropsType = {
   iconId: string;
@@ -24,3 +25,10 @@ export const Icon = (props: IconPropsType) => {
 };
 
 // <use xlinkHref={`${iconsSprite}#${props.iconId}`}></use>  Это очень важно понять, впринципе как всю страницу эту
+
+// export const StyledIcon = styled.div`
+//   @media ${thema.media.mobile} {
+//     width: 310;
+//     height: 239;
+//   }
+// `;
