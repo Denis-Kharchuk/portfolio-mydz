@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "../../../../components/icon/Icon";
 import styled from "styled-components";
+import { thema } from "../../../../styles/Thema";
 
 type SKillPropsType = {
   imgSrc: string;
@@ -19,14 +20,35 @@ export const Skill = (props: SKillPropsType) => {
 };
 
 const StyledSkill = styled.div`
-  width: 114px;
+  max-width: 114px;
+  width: 100%;
   height: 164px;
-  margin: 0 60px;
-  margin-bottom: 60px;
+  /* margin: 0 60px; */
+  /* margin-bottom: 60px; */
 
   img {
-    width: 120px;
+    max-width: 120px;
+    width: 100%;
     height: 120px;
+  }
+  @media ${thema.media.tablet} {
+    width: 88px;
+
+    height: 120px;
+    /* margin-right: 45px;
+    margin-left: 0px; */
+    /* margin-right: 22px;
+    margin-left: 22px; */
+    margin-bottom: 80px;
+
+    img {
+      max-width: 85px;
+
+      height: 88px;
+    }
+    p {
+      font-size: 11px;
+    }
   }
 `;
 

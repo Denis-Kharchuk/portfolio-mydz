@@ -16,10 +16,11 @@ export const Project2 = (props: ProjectPropsType) => {
     <ProjectStyles>
       <Image src={props.src} />
       <TitleProject>{props.title}</TitleProject>
-
-      <StyledButton>Javascript</StyledButton>
-      <StyledButton>React Native</StyledButton>
-      <StyledButton>redux</StyledButton>
+      <SectionButton>
+        <StyledButton>Javascript</StyledButton>
+        <StyledButton>React Native</StyledButton>
+        <StyledButton>redux</StyledButton>
+      </SectionButton>
       <TextProject>{props.text}</TextProject>
     </ProjectStyles>
   );
@@ -30,6 +31,7 @@ const ProjectStyles = styled.div`
   max-width: 522px;
   width: 100%;
   height: 636px;
+  height: 100%;
   background: #222525;
 
   button {
@@ -39,12 +41,31 @@ const ProjectStyles = styled.div`
     height: 30px;
     margin-right: 12px;
   }
+  @media ${thema.media.mobile} {
+    border-radius: 6px;
+    width: 362px;
+    height: 574px;
+    height: 100%;
+
+    img {
+      width: 363px;
+      height: 296px;
+    }
+  }
 `;
 
 const SectionButton = styled.div`
-  width: 399px;
+  max-width: 399px;
+  width: 100%;
   height: 30px;
-  margin: 10px 0 20px;
+  height: 100%;
+  padding: 0px 0px 0px 20px;
+
+  button {
+    &:last-child {
+      margin-top: 10px; /* Задаем margin-top только для последней кнопки */
+    }
+  }
 `;
 
 const TitleProject = styled.h3`
@@ -52,7 +73,7 @@ const TitleProject = styled.h3`
   font-weight: 600;
   font-size: 20px;
   color: #d9f2f2;
-  margin-top: 30px;
+  padding: 25px 0px 15px 25px;
 `;
 
 const TextProject = styled.p`
@@ -62,6 +83,7 @@ const TextProject = styled.p`
   line-height: 150%;
   letter-spacing: 0.04em;
   color: ${thema.colors.primeryText};
+  padding: 20px 17px;
 `;
 
 const Image = styled.img`

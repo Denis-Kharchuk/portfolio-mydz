@@ -24,7 +24,11 @@ export const AboutMe = () => {
   );
 };
 
-const StyledAboutMe = styled.section``;
+const StyledAboutMe = styled.section`
+  @media ${thema.media.tablet} {
+    padding: 70px 0;
+  }
+`;
 
 const StyledText = styled.p`
   border-left: 4px solid yellow;

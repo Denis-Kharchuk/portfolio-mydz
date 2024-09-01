@@ -4,12 +4,17 @@ import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";
 import { StyledButton } from "../../../components/Button";
+import { thema } from "../../../styles/Thema";
 
 export const Main = () => {
   return (
     <StyledMain>
       <Container>
-        <FlexWrapper align={"center"} justify={"space-evenly"} wrap="wrap">
+        <FlexWrapper
+          align={"center"}
+          justify={"space-evenly"}
+          wrap="wrap-reverse"
+        >
           <StyledMainSection>
             <MainTitle>WEB DEVELOPER</MainTitle>
             <h2>Denis Fereg</h2>
@@ -28,16 +33,18 @@ export const Main = () => {
             viewBox="0 0 500 500"
           />
         </FlexWrapper>
-        <FlexWrapper align="center" justify="center">
-          <a href="">
-            <Icon
-              iconId="scrollSvg"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-            />
-          </a>
-        </FlexWrapper>
+        <MobileScroll>
+          <FlexWrapper align="center" justify="center">
+            <a href="">
+              <Icon
+                iconId="scrollSvg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+              />
+            </a>
+          </FlexWrapper>
+        </MobileScroll>
       </Container>
     </StyledMain>
   );
@@ -46,6 +53,7 @@ export const Main = () => {
 // не работает iconId="scrollSvg"
 
 export const Photo = styled.img``;
+const MobileScroll = styled.div``;
 
 const StyledMain = styled.section`
   min-height: 100vh;
@@ -69,6 +77,32 @@ const StyledMain = styled.section`
     width: 134px;
     height: 45px;
     margin-top: 30px;
+  }
+  @media ${thema.media.tablet} {
+    h1 {
+      text-align: center;
+      font-size: 16px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    button {
+      display: block;
+      margin: 16px auto 0 auto; /* Центрируем кнопку по горизонтали */
+    }
+  }
+  p {
+    text-align: center;
+  }
+
+  padding: 70px 0;
+  ${MobileScroll} {
+    @media ${thema.media.tablet} {
+      display: none;
+    }
   }
 `;
 

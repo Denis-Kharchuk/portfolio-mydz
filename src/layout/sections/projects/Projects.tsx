@@ -7,6 +7,7 @@ import { Project1 } from "./project/Project1";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Project2 } from "./project/Project2";
 import { Container } from "../../../components/Container";
+import { thema } from "../../../styles/Thema";
 
 export const Projects = () => {
   return (
@@ -49,6 +50,11 @@ export const Projects = () => {
 const ProjectsStyles = styled.section`
   padding-bottom: 140px;
   padding-top: 140px;
+  @media ${thema.media.tablet} {
+    padding: 70px 0;
+
+   
+  }
   /* display: flex;
   flex-direction: row;
   justify-content: center;

@@ -23,7 +23,8 @@ export const Skills = () => {
     <StyledSkills>
       <Container>
         <SectionTitle>Skills</SectionTitle>
-        <FlexWrapper justify="space-evenly" wrap="wrap">
+        {/* <FlexWrapper justify="space-evenly" wrap="wrap"> */}
+        <Test>
           <Skill imgSrc={JavaScriptPhoto} title="JAVACRIPT" imgAlt="" />
           <Skill imgSrc={typescriptPhoto} title="typescript" imgAlt="" />
           <Skill imgSrc={mongodbPhoto} title="mongoDb" imgAlt="" />
@@ -41,10 +42,19 @@ export const Skills = () => {
           />
           <Skill imgSrc={reduxPhoto} title="Redux" imgAlt="" />
           <Skill imgSrc={gitPhoto} title="Git" imgAlt="" />
-        </FlexWrapper>
+        </Test>
+        {/* </FlexWrapper> */}
       </Container>
     </StyledSkills>
   );
 };
 
 const StyledSkills = styled.section``;
+
+const Test = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 45px;
+`;

@@ -16,7 +16,7 @@ export const Project1 = (props: ProjectPropsType) => {
   return (
     <ProjectStyles>
       <Image src={props.src} />
-      
+
       <TitleProject>{props.title}</TitleProject>
       <SectionButton>
         <StyledButton>Javascript</StyledButton>
@@ -35,6 +35,7 @@ const ProjectStyles = styled.div`
   max-width: 522px;
   width: 100%;
   height: 636px;
+  height: 100%;
   background: #222525;
 
   button {
@@ -44,16 +45,30 @@ const ProjectStyles = styled.div`
     height: 30px;
     margin-right: 12px;
   }
+  @media ${thema.media.mobile} {
+    border-radius: 6px;
+    width: 362px;
+    height: 574px;
+    height: 100%;
+
+    img {
+      width: 363px;
+      height: 296px;
+    }
+  }
 `;
 
 const SectionButton = styled.div`
   max-width: 399px;
   width: 100%;
   height: 30px;
-
+  height: 100%;
   padding: 0px 0px 0px 20px;
+
   button {
-    margin-bottom: 10px;
+    &:last-child {
+      margin-top: 10px; /* Задаем margin-top только для последней кнопки */
+    }
   }
 `;
 
@@ -72,7 +87,7 @@ const TextProject = styled.p`
   line-height: 150%;
   letter-spacing: 0.04em;
   color: ${thema.colors.primeryText};
-  padding: 20px 0px 0px 20px;
+  padding: 20px 17px;
 `;
 
 const Image = styled.img`
