@@ -47,6 +47,9 @@ const StyledFooter = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media ${thema.media.tablet} {
+    padding: 70px 0;
+  }
 `;
 
 const SocialIconLink = styled.div`

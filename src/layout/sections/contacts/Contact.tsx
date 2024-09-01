@@ -29,7 +29,11 @@ export const Contact = () => {
   );
 };
 
-const StyledContacts = styled.section``;
+const StyledContacts = styled.section`
+  @media ${thema.media.tablet} {
+    padding: 70px 0;
+  }
+`;
 
 const ContactForm = styled.form`
   width: 100%;

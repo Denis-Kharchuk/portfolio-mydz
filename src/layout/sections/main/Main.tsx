@@ -93,9 +93,9 @@ const StyledMain = styled.section`
       display: block;
       margin: 16px auto 0 auto; /* Центрируем кнопку по горизонтали */
     }
-  }
-  p {
-    text-align: center;
+    p {
+      text-align: center;
+    }
   }
 
   padding: 70px 0;

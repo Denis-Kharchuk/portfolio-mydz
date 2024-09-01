@@ -23,8 +23,8 @@ const StyledSkill = styled.div`
   max-width: 114px;
   width: 100%;
   height: 164px;
-  /* margin: 0 60px; */
-  /* margin-bottom: 60px; */
+  margin: 0 60px;
+  margin-bottom: 60px;
 
   img {
     max-width: 120px;
@@ -33,13 +33,14 @@ const StyledSkill = styled.div`
   }
   @media ${thema.media.tablet} {
     width: 88px;
-
     height: 120px;
     /* margin-right: 45px;
     margin-left: 0px; */
     /* margin-right: 22px;
     margin-left: 22px; */
-    margin-bottom: 80px;
+
+    /* margin: 0px 22px 80px 22px; */
+    margin: 0 auto;
 
     img {
       max-width: 85px;

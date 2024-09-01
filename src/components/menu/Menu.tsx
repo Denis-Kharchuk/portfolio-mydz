@@ -64,4 +64,13 @@ const StyledMenu = styled.nav`
   a {
     color: ${thema.colors.primeryText};
   }
+
+  @media ${thema.media.tablet} {
+    .right {
+      display: flex;
+
+      align-items: center;
+      gap: 10px;
+    }
+  }
 `;

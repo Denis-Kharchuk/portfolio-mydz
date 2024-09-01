@@ -17,6 +17,7 @@ import styledComponentsPhoto from "./../../../assets/img/styledComponents.svg";
 import reduxPhoto from "./../../../assets/img/redux.svg";
 import gitPhoto from "./../../../assets/img/git.svg";
 import { Container } from "../../../components/Container";
+import { thema } from "../../../styles/Thema";
 
 export const Skills = () => {
   return (
@@ -49,12 +50,21 @@ export const Skills = () => {
   );
 };
 
-const StyledSkills = styled.section``;
+const StyledSkills = styled.section`
+  @media ${thema.media.tablet} {
+    padding: 70px 0;
+  }
+`;
 
 const Test = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 45px;
+
+  @media ${thema.media.tablet} {
+    gap: 45px;
+  }
+
+  /* gap: 45px; */
 `;
