@@ -14,6 +14,7 @@ export const Main = () => {
           align={"center"}
           justify={"space-evenly"}
           wrap="wrap-reverse"
+          height="82vh"
         >
           <StyledMainSection>
             <MainTitle>WEB DEVELOPER</MainTitle>
@@ -56,7 +57,6 @@ export const Photo = styled.img``;
 const MobileScroll = styled.div``;
 
 const StyledMain = styled.section`
-  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   padding-top: 200px;
