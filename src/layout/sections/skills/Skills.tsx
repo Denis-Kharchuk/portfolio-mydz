@@ -36,11 +36,7 @@ export const Skills = () => {
           <Skill imgSrc={dockerPhoto} title="Docker" imgAlt="" />
           <Skill imgSrc={reactJsPhoto} title="React JS" imgAlt="" />
           <Skill imgSrc={reactNactivePhoto} title="React Nactive" imgAlt="" />
-          <Skill
-            imgSrc={styledComponentsPhoto}
-            title="Styled Components"
-            imgAlt=""
-          />
+          <Skill imgSrc={styledComponentsPhoto} title="S.Component" imgAlt="" />
           <Skill imgSrc={reduxPhoto} title="Redux" imgAlt="" />
           <Skill imgSrc={gitPhoto} title="Git" imgAlt="" />
         </Test>
@@ -52,19 +48,38 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
   @media ${thema.media.tablet} {
-    padding: 70px 0;
   }
 `;
 
 const Test = styled.div`
-  display: flex;
+  display: grid;
+
+  gap: 120px;
+  row-gap: 60px;
+
+  grid-template-columns: repeat(auto-fill, minmax(120px, auto));
+  grid-template-rows: repeat(3, 1fr);
+
+  @media ${thema.media.tablet} {
+    display: grid;
+
+    gap: 45px;
+    row-gap: 80px;
+
+    grid-template-columns: repeat(auto-fill, minmax(88px, auto));
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  /* @media ${thema.media.tablet} {
+    grid-template-columns: repeat(3, 80px);
+  } */
+
+  /* display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 
   @media ${thema.media.tablet} {
     gap: 45px;
-  }
-
-  /* gap: 45px; */
+  } */
 `;

@@ -7,7 +7,7 @@ type FlexWrapperPropsType = {
   wrap?: string;
   gap?: string;
   grow?: string;
-  height?:string
+  height?: string;
 };
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
@@ -16,7 +16,11 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   justify-content: ${(props) => props.justify || "flex-start"};
   align-items: ${(props) => props.align || "stretch"};
   flex-wrap: ${(props) => props.wrap || "nowrap"};
-  flex-grow: ${(props) => props.grow || "nogrow"};
-  row-gap: ${(props) => props.gap || "nogap"};
-  height: ${(props) => props.height || "noheight"};;
+
+  gap: ${(props) => props.gap || "nogap"};
+  height: ${(props) => props.height || "noheight"};
+
+  & > * {
+    flex-grow: ${(props) => props.grow || "0"};
+  }
 `;

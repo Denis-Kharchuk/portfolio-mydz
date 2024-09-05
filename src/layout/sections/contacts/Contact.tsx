@@ -43,7 +43,6 @@ const ContactForm = styled.form`
   gap: 48px;
   margin: 0 auto;
   max-width: 532px;
-  height: 427px;
 
   textarea {
     resize: none;
@@ -51,6 +50,10 @@ const ContactForm = styled.form`
     max-width: 532px;
     height: 165px;
   }
+`;
+
+const Label = styled.label`
+  width: 100%;
 `;
 
 const ContactInfo = styled.input`
@@ -88,9 +91,5 @@ const ContactButton = styled.button`
   margin-top: -24px;
   max-width: 532px;
   height: 48px;
-  width: 100%;
-`;
-
-const Label = styled.label`
   width: 100%;
 `;

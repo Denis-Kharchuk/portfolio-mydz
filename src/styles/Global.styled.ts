@@ -32,6 +32,7 @@ body {
 button{
   background-color: unset;
   border: none;
+  cursor:pointer;
   color: ${thema.colors.secondaryText};
 }
 

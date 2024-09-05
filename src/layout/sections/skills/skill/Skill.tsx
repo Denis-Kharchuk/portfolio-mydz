@@ -20,13 +20,49 @@ export const Skill = (props: SKillPropsType) => {
 };
 
 const StyledSkill = styled.div`
-  max-width: 114px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  @media ${thema.media.svoe} {
+    &:nth-child(11) {
+      grid-area: 3/2/4/3;
+    }
+    &:nth-child(12) {
+      grid-area: 3/3/5/4;
+    }
+    &:nth-child(13) {
+      grid-area: 3/4/5/5;
+    }
+  }
+
+  @media ${thema.media.tablet} {
+    img {
+      max-width: 88px;
+    }
+
+    span {
+      font-size: 11px;
+    }
+
+    /* &:nth-child(13) {
+      grid-area: 5/2/6/3;
+    } */
+  }
+
+  /* img {
+    display: inline;
+    max-width: 120px;
+    max-height: 120px;
+  } */
+
+  /* max-width: 114px;
   width: 100%;
   height: 164px;
   margin: 0 60px;
-  margin-bottom: 60px;
+  margin-bottom: 60px; */
 
-  img {
+  /* img {
     max-width: 120px;
     width: 100%;
     height: 120px;
@@ -34,12 +70,13 @@ const StyledSkill = styled.div`
   @media ${thema.media.tablet} {
     width: 88px;
     height: 120px;
-    /* margin-right: 45px;
-    margin-left: 0px; */
-    /* margin-right: 22px;
-    margin-left: 22px; */
+    margin-right: 45px;
+    margin-left: 0px;
 
-    /* margin: 0px 22px 80px 22px; */
+    margin-right: 22px;
+    margin-left: 22px;
+
+    margin: 0px 22px 80px 22px;
     margin: 0 auto;
 
     img {
@@ -50,15 +87,13 @@ const StyledSkill = styled.div`
     p {
       font-size: 11px;
     }
-  }
+  } */
 `;
 
-const SkillText = styled.p`
+const SkillText = styled.span`
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  text-align: center;
-  margin-left: 5px;
 `;
